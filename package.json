@@ -1,7 +1,8 @@
 {
-  "name": "vim-test-jest-qf-reporter",
+  "name": "jest-vim-reporter",
+  "keywords": ["jest", "reporter", "vim", "vim-test"],
   "version": "0.0.1",
-  "description": "Reporter that makes jest results easier to work with for vim-test + qf",
+  "description": "Reporter that makes jest results easier to work with for Vim's quickfix and vim-test plugin",
   "main": "index.js",
   "author": "Oli Lalonde <olalonde@gmail.com>",
   "license": "MIT",

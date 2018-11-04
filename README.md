@@ -1,4 +1,4 @@
-# vim-test jest Reporter
+# Jest reporter for Vim's QuickFix
 
 ![vim-test jest demo](./vim-test-jest-demo.gif)
 
@@ -12,7 +12,7 @@ The output is compatible with Vim's default errorformat.
 ## Usage
 
 ```
-yarn add --dev vim-test-jest-qf-reporter
+yarn add --dev jest-vim-reporter
 ```
 
 ## With [vim-test](https://github.com/janko-m/vim-test) (recommended)
@@ -20,7 +20,7 @@ yarn add --dev vim-test-jest-qf-reporter
 In your `.vimrc`:
 
 ```viml
-let g:test#javascript#jest#options = '--reporters vim-test-jest-clean-qf-reporter'
+let g:test#javascript#jest#options = '--reporters jest-vim-reporter'
 ```
 
 (optional) Here's my full configuration using [vim-plug](https://github.com/junegunn/vim-plug). I tested a bunch of strategies and the one that seems to work best with neovim is Neomake.
@@ -29,14 +29,14 @@ let g:test#javascript#jest#options = '--reporters vim-test-jest-clean-qf-reporte
 Plug 'janko-m/vim-test' " run test from vim
 Plug 'neomake/neomake' " runs make asynchronously in background
 
-let g:test#javascript#jest#options = '--reporters vim-test-jest-clean-qf-reporter'
+let g:test#javascript#jest#options = '--reporters jest-vim-reporter'
 let g:test#strategy = 'neomake'
 ```
 
 ## With make
 
 ```viml
-set makeprg=./node_modules/.bin/jest\ --reporters\ vim-test-jest-clean-qf-reporter
+set makeprg=./node_modules/.bin/jest\ --reporters\ jest-vim-reporter
 ```
 
 
